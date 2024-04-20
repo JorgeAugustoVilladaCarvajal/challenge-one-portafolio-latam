@@ -40,8 +40,32 @@ Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
+.header{
+    display: flex;
+  
+    
+}
+.menu{
+    
+    display: flex;
+}
+.menu__list__item{
+    margin-left: 50px;
+}
 
 section.menu{
+
+}
+
+.skills__line{
+    display: flex;
+}
+
+.hobbies__line{
+    display: flex;
+}
+.academic__courses{
+    display: flex;
 
 }
 
