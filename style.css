@@ -30,9 +30,18 @@ body {
 ol, ul,li {
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: var(--cor-de-link);
+}
+
+.foto_menu{
+    display: none;
+}
+
+#menu_hamburguesa{
+    display: none;
 }
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
@@ -57,6 +66,8 @@ https://en.bem.info/methodology/quick-start/*/
     background-color: rgb(137, 137, 137);
     color: #000000;
     padding: 15px;
+    
+    
 }
 
 .menu__title{
@@ -68,6 +79,7 @@ color: #00de07;
 }
 
 .menu{  
+    max-width: 1200px;
     z-index: 1;
     position: fixed;
     margin: 05px;
@@ -88,13 +100,11 @@ color: #00de07;
 }
 
 nav{
-    position: relative;
+    z-index: 1;
     width: 0px;
     height: 50px;
     border-radius: 8px;
     display: flex;
-    
-  
 }
 
 nav a{
@@ -753,7 +763,8 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (min-width: 768px) {
+
+/*@media (min-width: 768px) {*/
 
 /* Menú */
 
@@ -767,10 +778,10 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Experiencia Profesional*/
 
-}
+/*}*/
 
 /*Mobile*/
-@media (min-width: 425px) {
+/*@media (min-width: 425px) {*/
 
 /*Menu*/
 
@@ -790,4 +801,79 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Footer*/
 
+/*}*/
+
+@media screen and (max-width: 1200px) {
+.menu{
+    padding: 1px;
+}
+
+@media screen and (max-width: 720px) {
+
+    .header{
+        width: 200px;
+        height: 20px;
+        font-size: 9px;
+    }
+
+    .menu nav{
+        border: solid 1px #00de07;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background: rgb(0, 0, 0);
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 1;
+        transition: all 300ms;
+        transition: all 300ms ease-in-out; /* Transición suave */
+    }
+
+    .menu ul{
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    .menu ul li{
+        
+    }
+    .menu ul li a{
+     
+    }
+    .foto_menu{
+        width: 60px;
+        height: 60px;
+        display: flex;
+    }
+
+    #menu_hamburguesa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background:rgba(255, 255, 255, 0.1);
+        font-size: 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition:all 300ms;
+    }
+
+    #menu_hamburguesa:hover{
+        background:rgba(255, 255, 255, 0.2);
+       
+    }
+
+
+    #Back_menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+
+    }
+}
 }
