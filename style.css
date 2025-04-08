@@ -87,7 +87,7 @@ color: #00de07;
     align-items: center;
     gap:0%;
     display: flex;
-    background-color: #000000a1;
+    background-color: #00000084;
     text-wrap: nowrap;
 }
 
@@ -114,7 +114,7 @@ nav a{
     font-weight: 500;
     color: #fff;
     text-decoration: none;
-    padding: 0 23px;
+    padding: 0 0px;
     z-index: 1;
 }
 
@@ -822,7 +822,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         top: 0;
         right: -250px;
         background: rgb(0, 0, 0);
-        width: 250px;
+        width: 240px;
         height: 100vh;
         padding: 40px;
         z-index: 1;
