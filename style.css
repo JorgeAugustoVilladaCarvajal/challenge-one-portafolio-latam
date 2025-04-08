@@ -40,6 +40,10 @@ a{
     display: none;
 }
 
+#cerrar_menu{
+    display: none;
+}
+
 #menu_hamburguesa{
     display: none;
 }
@@ -114,7 +118,7 @@ nav a{
     font-weight: 500;
     color: #fff;
     text-decoration: none;
-    padding: 0 0px;
+    padding: 0 20px;
     z-index: 1;
 }
 
@@ -820,9 +824,9 @@ Utiliza las referencias de los breakpoints @media abajo */
         border: solid 1px #00de07;
         position: fixed;
         top: 0;
-        right: -250px;
+        left: -320px;
         background: rgb(0, 0, 0);
-        width: 240px;
+        width: 320px;
         height: 100vh;
         padding: 40px;
         z-index: 1;
@@ -846,6 +850,14 @@ Utiliza las referencias de los breakpoints @media abajo */
         display: flex;
     }
 
+    .cerrar_menu{
+        margin-left: 120px;
+        margin-right: 50px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+    }
+
     #menu_hamburguesa{
         display: flex;
         align-items: center;
@@ -860,6 +872,24 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     #menu_hamburguesa:hover{
+        background:rgba(255, 255, 255, 0.2);
+       
+    }
+
+    #cerrar_menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background:rgba(255, 255, 255, 0.1);
+        font-size: 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition:all 300ms;
+    }
+
+    #cerrar_menu:hover{
         background:rgba(255, 255, 255, 0.2);
        
     }
