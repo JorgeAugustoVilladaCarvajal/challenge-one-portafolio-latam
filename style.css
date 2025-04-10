@@ -1033,8 +1033,81 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
     .divune{
-        width: 85%;
-        height: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hobbies{
+        width:34%;
+        height: 34%;
+        margin: 5px;
+    }
+
+    .skills__title{
+        margin-left: 45%;
+        margin-top: 0px;
+        font-size: 14px;                     
+    }
+
+    .container{
+        width: 100px;
+        height: 100px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .targeta{
+        width: 40px;
+        height: 60px;
+        margin-left: 0px;
+        margin-top: 0px;
+
+
+
+
+        position: absolute;
+        top: 1015px;
+        left: 110px;
+        border-radius: 8px;
+        text-align: center;
+        cursor: pointer;
+        animation: Carrusel 8s linear infinite;
+    }
+
+    .imagen{
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
+        margin-top: 5px;
+    }
+
+    h4{
+    font-size: 6px;
+}
+
+    span{
+    position: absolute;
+    font-size: 3px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+    .data-span{
+    font-size: 5px;
+}
+
+    .progress-container{
+        width: 100px;
+        height: 10px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .progress-bar{
+        width: 30px;
+        height: 7px;
+        margin-left: 3.5px;
+        margin-top: 0px;
     }
 }
 }
