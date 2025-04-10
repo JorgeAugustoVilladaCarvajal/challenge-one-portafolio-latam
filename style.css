@@ -992,15 +992,49 @@ Utiliza las referencias de los breakpoints @media abajo */
         font-size: 14px;                      
     }
 
-    .title__network__item{
+    .p{
         margin-left: 0px;
         margin-top: 0px;
         font-size: 14px;                      
     }
 
+    .title__network__item{
+        font-size: 12px;                      
+    }
+
+    .about{
+        width: 45%;
+        height: 100%;
+    }
+
+   .about__container{
+    width: 76.5%;
+    height: 50%;
+    margin-left: 5px;
+    margin-top: 10px;
+   }
+
+   .firma{
+    width: 60%;
+    height: 60%;                     
+   }
+
+   .about__title{
+    margin-left: 0px;
+    margin-top: 0px;
+    font-size: 14px; 
+   }
+
+   .about__paragraph{
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 12px;                      
+   }
+
+
     .divune{
-        display: flex;
-        flex-direction: column;
+        width: 85%;
+        height: 50%;
     }
 }
 }
