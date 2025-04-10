@@ -16,4 +16,10 @@ function ocultar_menu() {
     background_menu.style.display = "none";
 }
 
+const spans = document.querySelectorAll("span");
+
+spans.forEach((span) =>{
+    span.style.width = span.dataset.width;
+    span.innerHTML = span.dataset.width;
+})
 

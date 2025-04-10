@@ -74,6 +74,8 @@ https://en.bem.info/methodology/quick-start/*/
     
 }
 
+
+
 .menu__title{
   
 }
@@ -273,6 +275,43 @@ color: #ffffff;
     animation: Carrusel 8s linear infinite;
 }
 
+.container{
+    margin-bottom: 25px;
+}
+
+.h4{
+    
+    margin: 0 1 15px 15px;
+    letter-spacing: .5px;
+}
+
+span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #000000;
+    font-weight: 500;
+    font-size: 7px;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgba(76, 175, 80, 1) 50%, rgba(50, 222, 132, 1) 100%);
+    transition: width .5s linear;
+    
+}
+
+.progress-bar{
+    padding: 1.5px;
+    margin: 4.5px;
+    position: relative;
+    width: 50px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: rgb(234, 6, 6);
+    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.75);
+}
 
 
 .skills__name{
@@ -813,11 +852,13 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 @media screen and (max-width: 720px) {
+    
+/*Menu*/
 
     .header{
-        width: 200px;
+        width: 240px;
         height: 20px;
-        font-size: 9px;
+        font-size: 11px;
     }
 
     .menu nav{
@@ -904,6 +945,62 @@ Utiliza las referencias de los breakpoints @media abajo */
         background: rgba(0, 0, 0, 0.5);
         display: none;
 
+    }
+
+/*Titulo*/
+
+    .title{
+        width: 45%;
+        height: 100%;
+    }
+
+    .title__div{
+        width: 85%;
+        height: 50%;
+    }
+
+    .title__profile{
+        height: 180px;
+        width: 180px;        
+        margin-left: 35px;
+        margin-top: 70px;
+        clip-path: circle(89px at center);
+    }
+
+    .title__container{
+        width: 90%;
+        height: 50%;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    .title__bio{
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 16px;                      
+    }
+
+    .title__subsection{
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 14px;                      
+    }
+
+    .title__network{
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 14px;                      
+    }
+
+    .title__network__item{
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 14px;                      
+    }
+
+    .divune{
+        display: flex;
+        flex-direction: column;
     }
 }
 }
