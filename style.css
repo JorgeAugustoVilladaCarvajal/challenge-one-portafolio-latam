@@ -25,6 +25,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
+    cursor: none;
 }
 
 ol, ul,li {
@@ -81,7 +82,7 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .title__bio{
-color: #00de07;
+    color: #00de07;
 }
 
 .menu{  
@@ -120,19 +121,19 @@ nav a{
     font-weight: 500;
     color: #fff;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 8px;
     z-index: 1;
 }
 
 nav span{
-position: absolute;
-top: 0;
-left: 0;
-width: 95px;
-height: 100%;
-background: linear-gradient(45deg, #4f1919, #11ce0088);
-border-radius: 8px;
-transition: .5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg, #4f1919, #11ce0088);
+    border-radius: 8px;
+    transition: .5s;
 }
 
 .menu__list__item{
@@ -163,7 +164,6 @@ a:hover{
 }
 
 .title__profile{
-    
     margin-left: 45px;
     margin-top: 80px;
     clip-path: circle(125px at center);
@@ -173,10 +173,51 @@ a:hover{
 .title{
 
     background-image: url("add customer_print");
-   background-attachment: fixed;
+    background-attachment: fixed;
 
 }
 
+.box{
+    display: flex;
+    margin-left: 0px ;
+    margin-bottom: 0px;
+}
+
+.box .eye{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2),
+    inset 0 0 15px #000000;
+
+}
+
+.box .eye::before{
+    content: '';
+    position: absolute;
+    top: 45%;
+    background: #000;
+    left: 12px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 5px solid #09883c;
+    box-sizing: border-box;
+    /* content: '';
+    position: absolute;
+    top: 50%;
+    background: #000;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 10px solid #09883c;
+    box-sizing: border-box; */
+}
 
 .skills__line{
     display: flex;
@@ -662,7 +703,7 @@ section.experience{
 }
 
 .casando{
-display: flex;
+    display: flex;
 }
 
 .experience__img{
@@ -691,8 +732,8 @@ display: flex;
 
 .formcontato__img{
     margin-left: 5px;
-margin-top:15px;
-margin-bottom: 5px;
+    margin-top:15px;
+    margin-bottom: 5px;
    
 }
 
@@ -715,19 +756,18 @@ margin-bottom: 5px;
 .formcontato__title{
     margin: 5px;
     margin-left: 32%;
-    
-color: #00de07;
+    color: #00de07;
 }
 
 .formcontato__subtext{
-color: #7f7f7f;
-margin: 5px;
-margin-left: 19%;
+    color: #7f7f7f;
+    margin: 5px;
+    margin-left: 19%;
 }
 
 .formcontato__subtexte{
-color: #ffffff;
-margin: 5px;
+    color: #ffffff;
+    margin: 5px;
 }
 
 .textformcolor{
@@ -735,8 +775,7 @@ margin: 5px;
     color: #00de07;
 }
 
-.formcontato__form{
-    
+.formcontato__form{   
     margin: 5px;
 
 }
@@ -770,11 +809,11 @@ section.formcontato{
 }
 
 .experience__title{
-color: #878787;
+    color: #878787;
 }
 
 .experience__text{
-color: #ffffff;
+    color: #ffffff;
 }
 /*footeer*/
 
@@ -800,6 +839,69 @@ section.footer{
     margin-left: 48%;
    
 }
+
+.binario{
+    text-shadow: 0 0 5px rgb(225, 225, 225),
+    0 0 10px rgb(207, 207, 207),
+    0 0 15px rgb(163, 163, 163),
+    0 0 20px rgb(131, 131, 131);
+    position: absolute;
+    font-size: 20px;
+    color: rgb(182, 182, 182);
+    pointer-events: none;
+    animation: desaparecer 4s forwards;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 9999;
+}
+
+@keyframes desaparecer {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+
+.cursor{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #00f279;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+.cursor2{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #cd2626;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+}
+
+.content:hover ~ .cursor{
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: #c6c6c6;
+    opacity: .5;
+}
+
+.content:hover ~ .cursor2{
+    opacity: 0;
+}
+
+
+
+
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
@@ -889,6 +991,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         width: 60px;
         height: 60px;
         display: flex;
+        clip-path: circle(29px at center);
     }
 
     .cerrar_menu{
@@ -1061,12 +1164,8 @@ Utiliza las referencias de los breakpoints @media abajo */
         height: 60px;
         margin-left: 0px;
         margin-top: 0px;
-
-
-
-
         position: absolute;
-        top: 1015px;
+        top: 1000px;
         left: 110px;
         border-radius: 8px;
         text-align: center;
