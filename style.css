@@ -1009,6 +1009,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     .menu ul li a{
      
     }
+
     .foto_menu{
         width: 60px;
         height: 60px;
@@ -1094,8 +1095,8 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     .aureola {
         position: absolute;
-        top:6.1%;
-        left: 18.1%;
+        top:6%;
+        left: 17%;
         width: 203px;
         height: 203px;
         border: 3px dashed rgb(77, 241, 175); /* color dorado */
@@ -1258,23 +1259,23 @@ Utiliza las referencias de los breakpoints @media abajo */
         margin-top: 0px;
     }
 
-.targetas{
-    width: 40px;
-    height: 60px;
-    margin-left: 0px;
-    margin-top: 0px;
-    position: absolute;
-    top: 1155px;
-    left: 110px;
-    border-radius: 8px;
-    text-align: center;
-    cursor: pointer;
-    animation: Carrusel 8s linear infinite;
-}
-
-h3{
-    font-size: 7px;
+    .targetas{
+        width: 40px;
+        height: 60px;
+        margin-left: 0px;
+        margin-top: 0px;
+        position: absolute;
+        top: 1155px;
+        left: 110px;
+        border-radius: 8px;
+        text-align: center;
+        cursor: pointer;
+        animation: Carrusel 8s linear infinite;
     }
+
+.titulos_cards_hobbies{
+    font-size: 7px;
+}
 
 }
 }
