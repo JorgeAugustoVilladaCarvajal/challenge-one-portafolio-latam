@@ -142,10 +142,9 @@ nav span{
 }
 
 a{
-
-color: #000000;
-display: inline-block;
-align-items: center;
+    color: #000000;
+    display: inline-block;
+    align-items: center;
 }
 
 a:hover{
@@ -164,11 +163,38 @@ a:hover{
 }
 
 .title__profile{
+    object-fit: cover;
+    z-index: 2;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      
     margin-left: 45px;
     margin-top: 80px;
     clip-path: circle(125px at center);
 }
 
+.aureola {
+    position: absolute;
+    top:8.1%;
+    left: 13.8%;
+    width: 253px;
+    height: 253px;
+    border: 3px dashed rgb(77, 241, 175); /* color dorado */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: girar 30s linear infinite;
+    box-shadow: 0 0 100px rgba(9, 255, 0, 0.5);
+ 
+  }
+  
+  @keyframes girar {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
 
 .title{
 
@@ -268,7 +294,7 @@ a{
 
 
 .skills__name{
-color: #ffffff;
+    color: #ffffff;
 }
 
 .divune{
@@ -385,7 +411,7 @@ to{
 
 #html5:hover{
     scale: 2;
-box-shadow: 0px 0px 10px #00ff0dc9;
+    box-shadow: 0px 0px 10px #00ff0dc9;
 }
 
 #Css{
@@ -492,10 +518,8 @@ box-shadow: 0px 0px 10px #00ff0dc9;
     color: #878787;
 }
 
-
-
 .skills__name{
-color: #ffffff;
+    color: #ffffff;
 }
 
 .hobbies{
@@ -510,8 +534,7 @@ color: #ffffff;
     background-color: #000000a1;
 }
 
-.hobbiestittle{
-  
+.hobbiestittle{ 
     color: #878787;
 }
 
@@ -522,7 +545,6 @@ color: #ffffff;
     position: relative;
 }
 .targetas{
-    
     width: 60px;
     height: 80px;
     background-color: #898989;
@@ -847,7 +869,7 @@ section.footer{
     0 0 20px rgb(131, 131, 131);
     position: absolute;
     font-size: 20px;
-    color: rgb(182, 182, 182);
+    color: rgb(0, 255, 106);
     pointer-events: none;
     animation: desaparecer 4s forwards;
     font-family: 'Courier New', Courier, monospace;
@@ -886,7 +908,7 @@ section.footer{
     top: 0;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .content:hover ~ .cursor{
@@ -1070,6 +1092,20 @@ Utiliza las referencias de los breakpoints @media abajo */
         clip-path: circle(89px at center);
     }
 
+    .aureola {
+        position: absolute;
+        top:6.1%;
+        left: 18.1%;
+        width: 203px;
+        height: 203px;
+        border: 3px dashed rgb(77, 241, 175); /* color dorado */
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        animation: girar 30s linear infinite;
+        box-shadow: 0 0 15px rgba(9, 255, 0, 0.5);
+     
+      }
+
     .title__container{
         width: 90%;
         height: 50%;
@@ -1165,7 +1201,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         margin-left: 0px;
         margin-top: 0px;
         position: absolute;
-        top: 1000px;
+        top: 1015px;
         left: 110px;
         border-radius: 8px;
         text-align: center;
@@ -1182,19 +1218,19 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     h4{
     font-size: 6px;
-}
+    }
 
     span{
     position: absolute;
     font-size: 3px;
     margin-left: 0px;
     margin-top: 0px;
-}
+    }
 
     .data-span{
     font-size: 5px;
-}
-
+    }
+    
     .progress-container{
         width: 100px;
         height: 10px;
@@ -1208,5 +1244,37 @@ Utiliza las referencias de los breakpoints @media abajo */
         margin-left: 3.5px;
         margin-top: 0px;
     }
+
+    .hobbies__title{
+        margin-left: 42%;
+        margin-top: 0px;
+        font-size: 14px;            
+    }
+
+    .hobbies__line{
+        width: 100px;
+        height: 130px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+.targetas{
+    width: 40px;
+    height: 60px;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+    top: 1155px;
+    left: 110px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    animation: Carrusel 8s linear infinite;
+}
+
+h3{
+    font-size: 7px;
+    }
+
 }
 }
