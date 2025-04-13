@@ -1171,7 +1171,6 @@ Utiliza las referencias de los breakpoints @media abajo */
         font-size: 12px;                      
    }
 
-
     .divune{
         display: flex;
         flex-direction: column;
@@ -1276,6 +1275,49 @@ Utiliza las referencias de los breakpoints @media abajo */
 .titulos_cards_hobbies{
     font-size: 7px;
 }
+
+.academic{
+    padding: 1px;
+    width: 240px;
+    height: 460px;
+    margin-left: 5px;
+    margin-top: 15px;
+    display: block;
+}
+
+.academic__title{
+    margin-left: 35%;
+    margin-top: 15px;
+    font-size: 14px; 
+}
+
+.academic__courses{
+    display: block;
+    margin-left: 24.5%;
+}
+
+.academic__courses__box{
+    width: 120px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.academic__courses__list{
+
+}
+
+.academic__courses__item__img{
+    margin-bottom: 5px;
+}
+
+.academic__courses__item__title{
+}
+
+.tituloformacionacademica{
+    font-size: 12px;
+}
+
+
 
 }
 }
