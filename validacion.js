@@ -16,7 +16,7 @@ function ocultar_menu() {
     background_menu.style.display = "none";
 }
 
-const spans = document.querySelectorAll("span");
+const spans = document.querySelectorAll("data-span");
 
 spans.forEach((span) =>{
     span.style.width = span.dataset.width;

@@ -352,7 +352,7 @@ a{
     letter-spacing: .5px;
 }
 
-span{
+.data-span{
     position: absolute;
     top: 0;
     left: 0;
@@ -726,6 +726,20 @@ section.experience{
 
 .casando{
     display: flex;
+    
+}
+
+.experience__description{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.experience__repo{
+
 }
 
 .experience__img{
@@ -739,13 +753,58 @@ section.experience{
 
 .experience__text{
     margin-left: 15px;
-    margin-top: px;
 }
+
+
 
 .experience__botao--demo{
     margin-right: 15px;
 }
 
+.experience__botao--repo,
+.experience__botao--demo {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00de07;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.experience__botao--repo:hover,
+.experience__botao--demo:hover {
+    background-color: #009e05;
+}
+
+
+.experiencia__botao--repo,
+.experience__botao--demo {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00de07;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.experience__botao--repo:hover,
+.experience__botao--demo:hover {
+    background-color: #009e05;
+}
 /*Contacto*/
 
 .formcontato__contacto{
@@ -1307,7 +1366,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 .academic__courses__item__img{
-    margin-bottom: 5px;
+
 }
 
 .academic__courses__item__title{
@@ -1317,7 +1376,74 @@ Utiliza las referencias de los breakpoints @media abajo */
     font-size: 12px;
 }
 
+.casando{
+    display: flex;
+    flex-direction: column;
+}
 
+.experience{
+    width:50%;
+    height: 265px;
+    margin: 5px;
+}
+
+.experience__section__title{
+    font-size: 15px;
+}
+
+.experiencie__box{
+    width: 60%;
+}
+
+.experience__img{
+
+}
+
+.experience__title{
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.experience__text{
+    font-size: 11px;
+}
+
+.experience__description{
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.experience__repo{
+    display: flex;
+}
+
+.experience__demo{
+    margin-left: 22%;
+    margin-bottom: 11.5%;
+    height: 5px;
+
+}
+
+.experiencia__botao--repo{
+    width: 100%;
+    height: 20px;
+    font-size: 10px;
+    padding: 2px;
+}
+
+.experience__botao--demo{
+    width: 100%;
+    height: 20px;
+    font-size: 10px;
+    padding: 2px;
+}
+
+.aboton{
+    white-space: nowrap;
+
+}
 
 }
 }
