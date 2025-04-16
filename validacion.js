@@ -1,4 +1,6 @@
 //Haz tú validación en javascript acá
+//Efecto para aparecer y guardar el menu
+
 document.getElementById("menu_hamburguesa").addEventListener("click", mostrar_menu);
 
 document.getElementById("cerrar_menu").addEventListener("click", ocultar_menu);
@@ -16,12 +18,14 @@ function ocultar_menu() {
     background_menu.style.display = "none";
 }
 
-const spans = document.querySelectorAll("data-span");
+//Efecto para las barras
+const spans = document.querySelectorAll("span");
 
 spans.forEach((span) =>{
     span.style.width = span.dataset.width;
     span.innerHTML = span.dataset.width;
 })
+//Efecto para los ojos
 
 document.querySelector('body').addEventListener('mousemove',
     eyeball);
@@ -37,6 +41,8 @@ document.querySelector('body').addEventListener('mousemove',
             eye.style.transform = "rotate(" + rotation + "deg)";
     });
 }
+
+//Efecto para el mouse
 
 let lastMouseX = 0;
 let lastMouseY = 0;
