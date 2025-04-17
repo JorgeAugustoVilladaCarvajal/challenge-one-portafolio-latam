@@ -160,6 +160,10 @@ a{
     box-shadow: 0 0 12px #0f0, 0 0 24px #0f0;
   }
 
+.formcontato__botao{
+
+}
+
 .title__profile{
     object-fit: cover;
     z-index: 2;
@@ -173,7 +177,7 @@ a{
 
 .aureola {
     position: absolute;
-    top:7.9%;
+    top:8.1%;
     left: 13.8%;
     width: 253px;
     height: 253px;
@@ -244,7 +248,7 @@ a{
 }
 
 .title__network__item{
-    margin-top: 40px;
+    margin-top: 20px;
     width: 20%;
     height: 30px;
 }
@@ -338,7 +342,7 @@ a{
     background-color: #898989;
     font-size: 8px;
     position: absolute;
-    top: 1065px;
+    top: 39%;
     left: 300px;
     border-radius: 8px;
     text-align: center;
@@ -555,7 +559,7 @@ to{
     background-color: #898989;
     font-size: 8px;
     position: absolute;
-    top: 1065px;
+    top: 39%;
     left: 850px;
     border-radius: 8px;
     text-align: center;
@@ -735,7 +739,7 @@ section.experience{
 }
 
 .experience__description{
-    width: 300px;
+    width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -755,7 +759,7 @@ section.experience{
 }
 
 .experiencia__botao--repo:hover{
-    color: #000000;
+    color: #fe0e0e;
 }
 
 .experience__botao--demo{
@@ -771,15 +775,18 @@ section.experience{
 
 .experience__img{
     margin-left: 15px;
+    border-radius: 10%;
+    margin-left: 30%;
 }
 
 .experience__title{
-    margin-left: 15px;
     margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 .experience__text{
-    margin-left: 15px;
+    text-align: center;
 }
 
 
@@ -805,7 +812,7 @@ section.experience{
     display: block;
     margin: px;
     border-radius: 10px;
-    height: 95vh;
+    height: 93vh;
     width: 80vh;
     justify-content: center;
     align-items: center;
@@ -850,8 +857,25 @@ section.experience{
 }
 
 .formcontato__botao{
-    margin-top: 10px;
-}
+        margin-left: 28%;
+        margin-top: 5%;
+        padding: 5px 5px;
+        color: #0f0;
+        background: transparent;
+        border: 2px solid #0f0;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 0 8px #0f0;
+        transition: 0.3s;
+      }
+    
+      .formcontato__botao:hover {
+        background: #0f0;
+        color: #000;
+        box-shadow: 0 0 12px #0f0, 0 0 24px #0f0;
+      }
+
 
 section.formcontato{
 
@@ -863,7 +887,9 @@ section.formcontato{
 }
 
 .experience__section__title{
-    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 9%;
     color: #00de07;
 }
 
@@ -1130,10 +1156,15 @@ Utiliza las referencias de los breakpoints @media abajo */
         clip-path: circle(89px at center);
     }
 
+    a{
+        font-size: 12px;
+        margin: 3%;
+    }
+
     .aureola {
         position: absolute;
-        top:5.73%;
-        left: 38.70%;
+        top:5.57%;
+        left: 38.3%;
         width: 203px;
         height: 203px;
         border: 3px dashed rgb(77, 241, 175); /* color dorado */
@@ -1151,9 +1182,14 @@ Utiliza las referencias de los breakpoints @media abajo */
         margin-top: 10px;
     }
 
+    .firma{
+        border-radius: 10%;
+    }
+
     .title__bio{
         margin-left: 0px;
         margin-top: 0px;
+        margin-bottom: 5px;
         font-size: 16px;                      
     }
 
@@ -1176,7 +1212,11 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     .title__network__item{
-        font-size: 12px;                      
+        font-size: 12px; 
+        display: flex;  
+        width: 100%;   
+        height: 0%;   
+        margin: 0;         
     }
 
     .about{
@@ -1324,19 +1364,27 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 .academic__title{
     margin-left: 25%;
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 14px; 
 }
 
 .academic__courses{
     display: block;
-    margin-left: 24.5%;
+    margin-left: 29%;
+}
+
+.imagen-academica{
+    border-radius: 10%;
 }
 
 .academic__courses__box{
     width: 120px;
     font-size: 12px;
     margin-bottom: 10px;
+}
+
+.parrafoformacionacademica{
+    margin-bottom: 20px;
 }
 
 .academic__courses__list{
@@ -1361,64 +1409,58 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 .experience{
     width: 300px;
-    height: 265px;
+    height: 290px;
     margin: 5px;
 }
 
 .experience__section__title{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 22%;
     font-size: 15px;
 }
 
 .experiencie__box{
-    width: 60%;
+
 }
 
 .experience__img{
-
+border-radius: 10%;
 }
 
 .experience__title{
+text-align: center;
     margin-top: 3px;
     font-size: 12px;
 }
 
 .experience__text{
     font-size: 11px;
+    text-align: center;
 }
 
 .experience__description{
     display: flex;
-    margin-top: 25px;
     width: 100%;
-    height: 100%;
+    justify-content: center;
+    gap: 25px;
 }
 
 .experience__repo{
     display: flex;
+
 }
 
 .experience__demo{
-    margin-left: 22%;
-    margin-bottom: 11.5%;
-    height: 5px;
 
 }
 
 .experiencia__botao--repo{
-    width: 100%;
-    height: 20px;
-    font-size: 10px;
-    margin-top: 12px;
-    padding: 2px;
+    font-size: 12px;
 }
 
 .experience__botao--demo{
-    width: 90%;
-    height: 20px;
-    font-size: 10px;
-    padding: 5px;
-    margin-left: 20px;
-    margin-top: 0px;
+    font-size: 12px;
 
 }
 
@@ -1428,12 +1470,13 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 .formcontato{
     width: 300px;
-    height: 450px;
+    height: 470px;
     margin-left: 5px;
+    margin-top: 20px;
 }
 
 .formcontato__contacto{
-    margin-left: 5%;
+    margin-left: 8%;
 
 }
 
@@ -1496,10 +1539,10 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 .formcontato__botao{
-    background: #00de07;
-    margin-left: 30%;
-    border-radius: 20%;
-    width: 60px;
+    margin-top: 15px;
+    margin-left: 25%;
+    font-size: 12px;
+    color: #ffffff;
 }
 
 }
