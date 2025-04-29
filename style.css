@@ -160,6 +160,25 @@ a{
     box-shadow: 0 0 12px #0f0, 0 0 24px #0f0;
   }
 
+  #languageToggle{
+    margin-left: 10px;
+    padding: 5px 5px;
+    color: rgb(255, 0, 0);
+    background: transparent;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgb(255, 0, 0);
+    transition: 0.3s;
+  }
+
+  #languageToggle:hover {
+    background: rgb(255, 0, 0);
+    color: #000;
+    box-shadow: 0 0 12px rgb(255, 0, 0), 0 0 24px rgb(255, 0, 0);
+  }
+
 .formcontato__botao{
 
 }
@@ -177,7 +196,7 @@ a{
 
 .aureola {
     position: absolute;
-    top:8.1%;
+    top:8.3%;
     left: 13.8%;
     width: 253px;
     height: 253px;
@@ -560,7 +579,7 @@ to{
     font-size: 8px;
     position: absolute;
     top: 39%;
-    left: 850px;
+    left: 820px;
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
@@ -709,7 +728,20 @@ section.academic{
 }
 
 .tituloformacionacademica{
+    width: 60%;
     color: rgb(135, 135, 135);
+}
+
+.academic__courses__item__title{
+
+}
+
+.academic__courses__list{
+
+}
+
+.academic__courses__box{
+    width: 50%;
 }
 
 .parrafoformacionacademica{
@@ -726,7 +758,7 @@ section.experience{
     margin: 30px;
     margin-left: 10%;
     border-radius: 10px;
-    height:55vh;
+    height:60vh;
     width: 55vh;
     justify-content: center;
     align-items: center;
@@ -812,7 +844,7 @@ section.experience{
     display: block;
     margin: px;
     border-radius: 10px;
-    height: 93vh;
+    height: 100vh;
     width: 80vh;
     justify-content: center;
     align-items: center;
@@ -1072,6 +1104,11 @@ Utiliza las referencias de los breakpoints @media abajo */
     .menu ul li a{
      
     }
+
+    #languageToggle{
+        margin: 10px;
+        
+      }
 
     .foto_menu{
         width: 60px;

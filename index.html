@@ -28,12 +28,18 @@
             <img class="foto_menu" src="assets/profile.jpeg" alt="">
             <img class="cerrar_menu" src="https://img.icons8.com/?size=100&id=23537&format=png&color=40C057" alt="" id="cerrar_menu">
             <ul class="menu">
-                <li><a href="#sobre-mi">Sobre mi</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#formacion">Formación</a></li>
-                <li><a href="#xp">Proyectos</a></li>
+                <li><a id="tituloSobreMi" href="#sobre-mi">Sobre mi</a></li>
+                <li><a id="tituloSkills" href="#skills">Habilidades</a></li>
+                <li><a id="tituloHobbies" href="#hobbies">Pasatiempos</a></li>
+                <li><a id="tituloFormacion" href="#formacion">Formación</a></li>
+                <li><a id="tituloProyectos" href="#xp">Proyectos</a></li>
                 <li><a href="#contacto">jovisu2@hotmail.es</a></li>
+                <li class="">
+                    <button id="languageToggle">
+                        <img src="https://flagcdn.com/w40/co.png" alt="Español (Colombia)" id="es" width="30" height="30" style="margin-right:5px;">
+                        <img src="https://flagcdn.com/w40/us.png" alt="English (USA)" id="en" width="30" height="30">
+                    </button>
+                </li>
                 <li><div class="box">
                     <div class="eye"></div>
                     <div class="eye"></div>
@@ -70,10 +76,10 @@
     <!-- Sección sobre mi -->
     <section class="about" id="sobre-mi">
         <div class="about__container">
-            <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Soy estudiante de Ingeniería de Sistemas, busco oportunidad para adquirir experiencia en el área del desarrollo web con FlutterFlow versión 3.19.1, JavaScript, HTML5, Css3, Git y GitHub u otras tecnologías donde pueda desarrollar mis conocimientos técnicos y crecer junto a la empresa y a mis compañeros de trabajo también poseo conocimiento en manejo de bases de datos como Firebase y plataformas como Slack, Figma, Mural y Jira para metodologías Scrum.  </p>
-            <p class="about__paragraph">Soy una persona curiosa y me gusta resolver problemas. Aprender hace parte de mí día a día y los desafíos me motivan a encontrar las mejores soluciones. </p>
-            <p class="about__paragraph">Busco siempre trabajar en equipo, cooperando con todos y apoyando de la mejor manera posible, con grande satisfacción en aprender y enseñar.</p>
+            <h3 class="about__title" id="tituloSobreMi1">Sobre mi</h3>
+            <p class="about__paragraph" id="parrafo">Soy estudiante de Ingeniería de Sistemas, busco oportunidad para adquirir experiencia en el área del desarrollo web con FlutterFlow versión 3.19.1, JavaScript, HTML5, Css3, Git y GitHub u otras tecnologías donde pueda desarrollar mis conocimientos técnicos y crecer junto a la empresa y a mis compañeros de trabajo también poseo conocimiento en manejo de bases de datos como Firebase y plataformas como Slack, Figma, Mural y Jira para metodologías Scrum.  </p>
+            <p class="about__paragraph" id="parrafo1">Soy una persona curiosa y me gusta resolver problemas. Aprender hace parte de mí día a día y los desafíos me motivan a encontrar las mejores soluciones. </p>
+            <p class="about__paragraph" id="parrafo2">Busco siempre trabajar en equipo, cooperando con todos y apoyando de la mejor manera posible, con grande satisfacción en aprender y enseñar.</p>
             <!-- Si quieres, pon tú firma acá! -->
             <img class ="firma" src="assets/signature1.jpeg">
         </div>
@@ -82,7 +88,7 @@
     
    <div class="divune"> 
     <section class="hobbies" id="skills">
-        <h3 class="skills__title">Skills</h3>
+        <h3 class="skills__title" id="titulodehabilidades">Habilidades</h3>
        <div class="container"></div>
             <div class="targeta" id="html5">
             <img class="imagen" src="https://img.icons8.com/?size=100&id=23027&format=png&color=40C057" width="30px" height="30">
@@ -160,7 +166,7 @@
     <!-- Sección de Hobbies -->
 
     <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
+        <h3 class="hobbies__title" id="titulodepasatiempos">Pasatiempos</h3>
         <div class="hobbies__line"></div>
              <div class="targetas" id="Atletismo">
                 <img class="imagen" src="https://img.icons8.com/?size=100&id=916&format=png&color=40C057" width="30px" height="30">
@@ -187,7 +193,7 @@
         <!-- Sección de Formación académica -->
 
     <section class="academic" id="formacion">
-        <h2 class="academic__title" >Formación académica</h2>
+        <h2 class="academic__title" id="tituloformacionacademica">Formación académica</h2>
         <div class="academic__courses">
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
@@ -195,7 +201,7 @@
                     <li class="academic__courses__item__img">
                         <img class="imagen-academica" src="assets/SENA_logo.jpg" width="120px" height="120"></li>
                     <li class="academic__courses__item__title">
-                        <h4 class="tituloformacionacademica">Tecnologo en <br> Análisis y <br> Desarrollo de <br> Sistemas de Informacion</h4>
+                        <h4 class="tituloformacionacademica" id="subtituloformacionacademica">Tecnologo en Análisis y Desarrollo de Sistemas de Informacion</h4>
                     </li>
                     <li class="academic__courses__item__subtitle">
                         <p class="parrafoformacionacademica">2015 - SENA</p>
@@ -208,10 +214,10 @@
                     <li class="academic__courses__item__img">
                         <img class="imagen-academica" src="assets/unad_logo.jpg" width="120px" height="120"></li>
                     <li class="academic__courses__item__title">
-                        <h4 class="tituloformacionacademica">Pregrado en <br> Ingenieria de Sistemas</h4>
+                        <h4 class="tituloformacionacademica" id="titulodeformacionacademica1">Pregrado en <br> Ingenieria de Sistemas</h4>
                     </li>
                     <li class="academic__courses__item__subtitle">
-                        <p class="parrafoformacionacademica">En curso - UNAD</p></li>
+                        <p class="parrafoformacionacademica" id="parrafodeformacionacademica1">En curso - UNAD</p></li>
                 </ul>
             </div>
         </div>
@@ -220,7 +226,7 @@
     <!-- Sección de Experiencia Profesional/Proyectos-->
 <div class="casando">
     <div class="experience" id="xp">
-        <h2 class="experience__section__title" >Experiencia Profesional</h2>
+        <h2 class="experience__section__title" id="Experiencia">Experiencia Profesional</h2>
         <div class="experiencie__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
            
@@ -228,7 +234,7 @@
             <img class="experience__img" src="assets/add customer_print.jpeg" width="120px" height="120px">
            
             <div class="experience__info"></div>
-                <h2 class="experience__title">CRM para empresa de <br> Productos organicos</h2>
+                <h2 class="experience__title" id="experiencetitle1">CRM para empresa de <br> Productos organicos</h2>
                 <h3 class="experience__text">SpeedUp Tech </h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
@@ -249,21 +255,21 @@
           
       
     <div class="experience" id="xp">
-            <h2 class="experience__section__title" >Experiencia Profesional</h2>
+            <h2 class="experience__section__title" id="Experiencia1">Experiencia Profesional</h2>
             <div class="experiencie__box">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
                 <img class="experience__img" src="assets/calendario_print.jpeg" width="120px" height="120">
                 <div class="experience__info"></div>
-                    <h2 class="experience__title">Calendario de <br> agendamiento</h2>
-                    <h3 class="experience__text">SpeedUp Tech </h3>
+                    <h2 class="experience__title" id="experiencedetitle">Calendario de <br> agendamiento</h2>
+                    <h3 class="experience__text" id="experiencedetext">SpeedUp Tech </h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
                                 <div class="experience__repo">
-                                    <a href="https://github.com/JorgeAugustoVilladaCarvajal/Calendario-de-agendamieto-en-Flutterflow.git"><button class="experiencia__botao--repo">Repositório</button>
+                                    <a href="https://github.com/JorgeAugustoVilladaCarvajal/Calendario-de-agendamieto-en-Flutterflow.git"><button class="experiencia__botao--repo" id="botonrepositorio">Repositório</button>
                                     </a>
                                 </div>
                                 <div class="experience__demo">
-                                    <a href=""><button class="experience__botao--demo">Ver demo</button>
+                                    <a href=""><button class="experience__botao--demo" id="botonverrepositorio">Ver demo</button>
                                     </a>
                                 </div>
                         </div>
@@ -278,17 +284,17 @@
                     <img class="formcontato__img" src="https://img.icons8.com/?size=100&id=jShwZ2RCyPSO&format=png&color=40C057">
                 </div>
                 <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtexte">Complete el siguiente formulario y me <br> pondré en contacto con usted lo antes <br> posible. </h3>
+                    <h2 class="formcontato__title" id="titulodeformulario">Contacto</h2>
+                    <h3 class="formcontato__subtext" >¿Quieres contactarme?</h3>
+                    <h3 class="formcontato__subtexte" >Complete el siguiente formulario y me <br> pondré en contacto con usted lo antes <br> posible. </h3>
                     <form action="https://formsubmit.co/jovisu2@hotmail.es" method="POST" class="formcontato__form" name="form" netlify>
-                        <h3 class="textformcolor">Nombre:</h3>
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre"><br>
-                        <H3 class="textformcolor">Email:</H3>
+                        <h3 class="textformcolor" id="nombreformulario">Nombre:</h3>
+                        <input class="formcontato__input" id="inputnombre" type="text" name="nombre" placeholder="Nombre"><br>
+                        <H3 class="textformcolor" id="emailformulario">Correo electrónico:</H3>
                         <input class="formcontato__input" type="email" name="email" placeholder="E-mail"><br>
-                        <h3 class="textformcolor">Asunto:</h3>
+                        <h3 class="textformcolor" id="asuntoformulario">Asunto:</h3>
                         <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto"><br>
-                        <h3 class="textformcolor">Mensaje:</h3>
+                        <h3 class="textformcolor" id="mensajeformulario">Mensaje:</h3>
                         <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea><br>
                         <button type="submit" class="formcontato__botao">Enviar mensaje</button>
                     </form>
@@ -301,8 +307,8 @@
         <!-- Sección de Footer -->
         <section class="footer">
             <div class="footer__rodape">
-                <p class="footerclas">Desarrollado por Jorge Augusto Villada Carvajal</p>
-                <p class="footerclass">2024</p>
+                <p class="footerclas" id="footerclas">Desarrollado por Jorge Augusto Villada Carvajal</p>
+                <p class="footerclass" id="footerclass">2024</p>
             </div>
         </section>
     </div>
